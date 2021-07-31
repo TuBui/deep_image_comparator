@@ -12,12 +12,6 @@ RUN apt-get update -y && apt-get install -y \
     libopenblas-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# custom user
-# ARG USER_ID=260846
-# RUN useradd -m --no-log-init --system  --uid ${USER_ID} appuser -g sudo
-# RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-# USER appuser
-
 WORKDIR /opt
 ENV CONDA_AUTO_UPDATE_CONDA=false
 ENV HOME=/opt

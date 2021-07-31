@@ -1,10 +1,11 @@
-Deep Image Comparator: Learning to Visualize Editorial Change
-========================================================
+# Deep Image Comparator: Learning to Visualize Editorial Change
+
 ![Python 3.8](https://img.shields.io/badge/Python-3.8-green) ![Pytorch 1.7.0](https://img.shields.io/badge/Pytorch-1.7.0-green) ![MIT License](https://img.shields.io/badge/Licence-MIT-green)
 
 This repo contains official code, datasets and model for the CVPR 2021 Workshop on Media Forensics paper ["Deep Image Comparator: Learning to Visualize Editorial Change"](https://openaccess.thecvf.com/content/CVPR2021W/WMF/html/Black_Deep_Image_Comparator_Learning_To_Visualize_Editorial_Change_CVPRW_2021_paper.html).
 
 ## Dependencies
+
 In order to run training, the following main libraries are required:
 ```
 pytorch == 1.7.0
@@ -33,6 +34,7 @@ docker pull tuvbui/image_comparator:latest
 In order to run inference (extract image feature), only pytorch, torchvision and Pillow are required.
 
 ## Download data
+
 ```bash
 ./download_data.sh 
 
@@ -44,6 +46,7 @@ The deepaugmix pretrained model (ResNet50) is obtained from the [official repo](
 
 
 ## Train
+
 To train the retrieval model (phase 1 in the paper):
 
 ```python
@@ -55,6 +58,7 @@ We also release our trained model, which can be downloaded directly from [here](
 
 
 ## Inference
+
 To extract the fingerprint of an image:
 
 
@@ -67,6 +71,7 @@ This produces a 256-D float32 descriptor robust to both benign transformations (
 
 
 ## Reference
+
 ```
 @InProceedings{Black_2021_CVPR,
     author    = {Black, Alexander and Bui, Tu and Jin, Hailin and Swaminathan, Vishy and Collomosse, John},
