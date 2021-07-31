@@ -9,3 +9,4 @@ mkdir ./data
 wget -P ./data https://cvssp.org/data/Flickr25K/tubui/cvpr21wmf/psbattles.tar 
 
 tar -xvf ./data/psbattles.tar -C ./data
+rm -rf ./data/psbattles.tar

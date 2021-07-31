@@ -21,10 +21,10 @@ from utils import imageloader
 # from utils import debug
 
 
-TRAIN_DIR = 'data/psbattles_public'
-TRAIN_LST = 'data/psbattles_public/train_pairs.csv'
+TRAIN_DIR = './data'
+TRAIN_LST = './data/train_pairs.csv'
 VAL_DIR = TRAIN_DIR
-VAL_LST = 'data/psbattles_public/test_pairs.csv'
+VAL_LST = './data/test_pairs.csv'
 OUT = './output'
 
 
